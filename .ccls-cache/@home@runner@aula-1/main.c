@@ -3,24 +3,38 @@
 
 int main(void) {
 
-  char nome[50];
-  int idade;
-  float peso;
+  char name[50];
+  int damage = 15;
+  int life = 100;
+  int maxLife = 100;
+
+  int damEnemy= 5;
+  int lifeEnemy = 30;
+  int enemyMax = 30;
   
   printf("informe seu nome (maximo de 50 caracteres):\n");
-  scanf("%s", nome);
-  
+  fgets(name, 50, stdin);
   getchar();
-  
-  printf("\notimo, agora informe a sua idade:\n");
-  scanf("%d", &idade);
-  
-  printf("\notimo, agora o seu peso:\n");
-  scanf("%f", &peso);
-   
-  
-  printf("\nnome: %s\nidade: %d\npeso: %.1f\n", nome, idade, peso);
+
+  printf("otimo, agora podemos começar!\n");
+
+  getchar();
+
+  enemy();
+
+
+
   
   //system("pause");
+  return 0;
+}
+
+int enemy() {
+  int move;
+  printf("\num inimigo apareceu!\n");
+  getchar();
+
+  printf("\no que você vai fazer?\n1:atacar | 2:cura\n\n(digite o numero correspondente)");
+
   return 0;
 }
